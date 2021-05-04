@@ -1,0 +1,344 @@
+#reg_ini{
+    text-align: right;
+    font-family: "Arial";
+    font-size: small;
+    cursor: pointer;
+
+}
+button{
+    outline: none;
+}
+input{
+    outline: none;
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: Arial;
+    margin:0;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.barranav{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    background-color: lightskyblue;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.barranavcontenido{
+    overflow: hidden;
+    background-color: lightskyblue;
+    justify-content: center;
+
+
+}
+#logo{
+    width:2.6%;
+}
+
+.barranav a{
+    color: white;
+}
+
+.descripcion{
+    padding-right: 300px;
+}
+
+.barranavcontenido:hover {
+    background-color: gray;
+}
+
+.producto img{
+
+    width:30em;
+    text-decoration: none;
+}
+.producto button{
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 40px 40px 40px 40px;
+    background-color: white;
+
+}
+.producto button:hover{
+    background-color: red;
+}
+
+
+
+.productoDisplay img{
+    padding: 10px 0 0 0;
+    width: 30%;
+
+}
+.botonRegistro:hover{
+    background-color: gray;
+
+}
+.botonRegistro{
+    border-radius: 40px 40px 40px 40px;
+    background-color: aliceblue;
+    font-size: 20px;
+}
+
+button.inicioSesion{
+    background-color: aliceblue;
+    border-radius: 40px 40px 40px 40px;
+    border-color: black;
+}
+button.inicioSesion:hover{
+    background-color: gray;
+
+}
+figure.imagenDisplay img{
+    width:70%;
+    object-fit: cover;
+    object-position: center;
+
+}
+figcaption{
+    text-align: center;
+}
+
+li.producto{
+    width: 300px;
+    height:300px;
+
+    align-content: center;
+    align-items: center;
+}
+ul.product_display{
+    list-style: none;
+    margin:0px;
+    padding:10px;
+}
+ul.product_display li{
+    text-align:center;
+
+}
+ul.product_display li img{
+    width:30%;
+}
+#imagenPortada{
+    width:100%;
+    hight: 100%;
+}
+#responsiveProduct{
+    display: grid;
+    grid-template-areas:
+            'nombre nombre nombre'
+            'imagen descripcion descripcion'
+            'imagen precio boton';
+
+}
+
+footer#pieProducto{
+
+    margin-top: 80px;
+}
+@media screen and (max-width:900px){
+    .barranav{
+        flex-direction: column;
+        align-content: center;
+    }
+    #logo{
+        padding: 0 0 0 17px;
+        width:5%;
+    }
+    #responsiveProduct{
+        grid-template-areas:
+                'nombre nombre'
+                'imagen imagen'
+                'descripcion descripcion'
+                'precio boton';
+    }
+}
+.barranavcontenido{
+    vertical-align: center;
+    color:white;
+    padding: 0 5px 0 5px;
+}
+.barranavcontenido p{
+    text-align: center;
+}
+
+#userDesplegable{
+    display: none;
+    position: absolute;
+    background-color: white;
+    right: 0px;
+    width:125px;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+#userDesplegable ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+#userDesplegable li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#userDesplegable li:hover{
+    background-color: lightskyblue;
+}
+
+
+#desplegable {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline;
+    width: 40px;
+    height: 40px;
+    right: 125px;
+
+}
+#carrito{
+    margin-right: 30px;
+}
+
+.vistaCarrito{
+    text-align: center;
+    display: block;
+    padding: 20px;
+}
+.vistaCarrito img{
+    width: 200px;
+    height: auto;
+}
+
+
+.productoCarrito{
+    width: 300px;
+    margin: auto;
+    height: auto;
+    border: 1px solid black;
+}
+#finalizarCompra{
+    border-radius: 40px 40px 40px 40px;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+#finalizarCompra:hover{
+    background-color: aliceblue;
+}
+
+#desplegableCarrito{
+    display: none;
+    position: absolute;
+    background-color: white;
+    right: 0px;
+    width:125px;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+.pedido{
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    width: 50%;
+    height: auto;
+}
+
+.productoPedido{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    text-align: right;
+}
+.productoPedido img{
+    width: 50%;
+    height: auto;
+    float: left;
+    padding: 10px;
+}
+#misPedidos{
+    text-align: center;
+}
+#vaciarCarro{
+    border-radius: 40px 40px 40px 40px;
+    font-size: 20px;
+    background-color: red;
+    border: 1px solid black;
+}
+#vaciarCarro:hover{
+    background-color: white;
+}
+#miPerfil{
+    text-align: center;
+}
+
+#reg_ini form{
+    text-align: left;
+    position: absolute;
+    margin:4px;
+}
+#noProductos{
+    text-align: center;
+}
+#reg_ini img{
+    width: 30px;
+    height: auto;
+    margin:3px;
+}
+
+#reg_ini a{
+    padding:3px;
+    display: inline;
+}
+
+.productoCarrito button{
+    border:none;
+    background-color: white;
+    font-size: 30px;
+}
+button.botonEliminar{
+    float:right;
+
+}
+div.botonesProductoCarrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+span.cantidadPC{
+    padding:10px;
+}
+
+#reg_ini input[type=submit]{
+    background-color: white;
+    border-radius: 8px;
+    border:1px solid black;
+}
+#reg_ini input[type=submit]:hover{
+    background-color: aliceblue;
+}
+#imagenAvatar{
+    width:200px;
+    height:auto;
+}
+
+span[id^='cantidadPC']{
+    padding-top:8px;
+}

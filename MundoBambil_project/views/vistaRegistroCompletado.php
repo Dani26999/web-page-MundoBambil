@@ -1,0 +1,1 @@
+<b>¡Registro completado!</b>

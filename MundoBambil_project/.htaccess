@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "MundoBambil"
+AuthUserFile /home/TDIW/tdiw-a11/public_html/.htpasswd
+Require valid-user

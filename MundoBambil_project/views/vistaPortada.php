@@ -1,0 +1,1 @@
+<img src="imagenes/<?php echo $resultado[0]['Contenido']; ?>" id="imagenPortada">
